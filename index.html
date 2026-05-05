@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="ja" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ZUBA English Studio | 初心者にやさしいマンツーマン英会話</title>
+  <meta name="description" content="ZUBA English Studioは、マレーシアのインターナショナルスクールで学んだ経験と約2年のオンライン英会話講師経験を持つAbe Aizubaによる、初心者にやさしいマンツーマン英会話スタジオです。">
+  <meta name="keywords" content="オンライン英会話, マンツーマン英会話, 初心者向け英会話, 英会話コーチ, 留学準備, 日常英会話">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ZUBA English Studio | 初心者にやさしいマンツーマン英会話">
+  <meta property="og:description" content="初心者・学生・保護者の方も安心して相談できる、マンツーマン英会話スタジオ。">
+  <meta property="og:site_name" content="ZUBA English Studio">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#172033',
+            secondary: '#FFF9F0',
+            accent: '#2F8F7B',
+            soft: '#F6EFE3',
+            muted: '#667085',
+            border: '#E7DFD2'
+          },
+          fontFamily: {
+            body: ['Noto Sans JP', 'Inter', 'sans-serif'],
+            display: ['Noto Serif JP', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FFF9F0;
+      color: #172033;
+      letter-spacing: 0.01em;
+    }
+
+    .glass-nav {
+      background: rgba(255, 249, 240, 0.9);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .reveal {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .js .reveal:not(.active) {
+      opacity: 0.98;
+      transform: translateY(10px);
+    }
+
+    .js .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    details > summary {
+      list-style: none;
+    }
+
+    details > summary::-webkit-details-marker {
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="font-body antialiased overflow-x-hidden">
+
+  <!-- HEADER -->
+  <header class="fixed w-full top-0 z-50 glass-nav border-b border-border">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
+      <a href="#" class="font-display font-bold text-xl tracking-tight text-primary">
+        ZUBA English Studio
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+        <a href="#why-zuba" class="text-muted hover:text-primary">選ばれる理由</a>
+        <a href="#about-coach" class="text-muted hover:text-primary">講師紹介</a>
+        <a href="#pricing" class="text-muted hover:text-primary">コース・料金</a>
+        <a href="#flow" class="text-muted hover:text-primary">受講の流れ</a>
+        <a href="#faq" class="text-muted hover:text-primary">よくある質問</a>
+        <a href="#contact" class="px-5 py-2.5 bg-primary text-white rounded-xl hover:bg-accent transition-all">
+          無料相談
+        </a>
+      </nav>
+
+      <button id="mobile-menu-btn" class="md:hidden text-primary p-2" aria-label="メニューを開く">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full glass-nav border-b border-border shadow-lg">
+      <div class="flex flex-col px-6 py-6 space-y-4">
+        <a href="#why-zuba" class="mobile-link text-primary font-medium">選ばれる理由</a>
+        <a href="#about-coach" class="mobile-link text-primary font-medium">講師紹介</a>
+        <a href="#pricing" class="mobile-link text-primary font-medium">コース・料金</a>
+        <a href="#flow" class="mobile-link text-primary font-medium">受講の流れ</a>
+        <a href="#faq" class="mobile-link text-primary font-medium">よくある質問</a>
+        <a href="#contact" class="mobile-link px-5 py-3 bg-primary text-white text-center rounded-xl font-medium">無料カウンセリング</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="pt-32 pb-16 md:pt-44 md:pb-24 px-6 md:px-12 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12 md:gap-20">
+    <div class="flex-1 reveal active">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border bg-white text-xs font-medium text-muted mb-6 shadow-sm">
+        <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+        新規レッスン受付中
+      </div>
+
+      <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+        英語を、もっと自然に。<br>
+        もっと自分らしく。
+      </h1>
+
+      <p class="text-lg text-muted mb-5 leading-relaxed max-w-xl">
+        ZUBA English Studioは、初心者・学生の方も安心して始められるマンツーマン英会話スタジオです。
+      </p>
+
+      <p class="text-base text-muted mb-8 leading-relaxed max-w-xl">
+        マレーシアのインターナショナルスクールで学んだ経験と、約2年のオンライン英会話講師経験を持つAbe Aizubaが、日常英会話・基礎文法・発音・実践的な会話練習をやさしくサポートします。英語が苦手でも大丈夫。日本語で相談しながら、あなたのペースで進められます。
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center gap-4">
+        <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-accent text-white rounded-2xl font-medium hover:shadow-xl transition-all flex items-center justify-center gap-2">
+          無料カウンセリングへ
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+        <a href="#pricing" class="w-full sm:w-auto px-8 py-4 bg-white border border-border text-primary rounded-2xl font-medium hover:bg-soft transition-colors flex items-center justify-center">
+          コースを見る
+        </a>
+      </div>
+
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm text-muted">
+        <div class="bg-white border border-border rounded-xl px-4 py-3">日本語で相談OK</div>
+        <div class="bg-white border border-border rounded-xl px-4 py-3">初心者・学生歓迎</div>
+        <div class="bg-white border border-border rounded-xl px-4 py-3">無理な勧誘なし</div>
+      </div>
+    </div>
+
+    <div class="flex-1 w-full max-w-md md:max-w-none relative reveal active">
+      <div class="aspect-[4/5] bg-slate-200 rounded-3xl overflow-hidden shadow-2xl relative group">
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80" alt="オンライン英会話レッスンのイメージ写真" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/65 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-8 text-white">
+          <p class="font-display text-2xl font-semibold mb-1">Abe Aizuba</p>
+          <p class="text-sm opacity-90">English Conversation Coach</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section id="why-zuba" class="py-24 bg-white reveal">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="text-center mb-16">
+        <p class="text-accent font-semibold text-sm mb-2">Why ZUBA?</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">ZUBAが選ばれる理由</h2>
+        <p class="text-muted max-w-2xl mx-auto">
+          英語を完璧に話すことよりも、まずは「自分の言葉で伝える力」を大切にしています。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="md:col-span-2 bg-secondary rounded-3xl p-8 border border-border shadow-sm">
+          <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm">
+            <i data-lucide="message-circle" class="text-accent"></i>
+          </div>
+          <h3 class="text-2xl font-display font-semibold mb-4">間違いを恐れず、たくさん話せる場所</h3>
+          <p class="text-muted leading-relaxed">
+            初心者の方が英語を話すときに一番不安なのは、「間違えたらどうしよう」という気持ちです。ZUBAでは、間違いを責めるのではなく、自然に言い換えたり、より伝わりやすい表現を一緒に練習します。英語が苦手な方も、安心してスタートできます。
+          </p>
+        </div>
+
+        <div class="bg-accent text-white rounded-3xl p-8 shadow-sm">
+          <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mb-6">
+            <i data-lucide="heart"></i>
+          </div>
+          <h3 class="text-xl font-display font-semibold mb-4">あなたのペースで、一緒に成長</h3>
+          <p class="text-white/85 leading-relaxed text-sm">
+            急がず、焦らず、目標や悩みに合わせて進めます。保護者の方からのご相談も歓迎しています。
+          </p>
+        </div>
+
+        <div class="bg-white rounded-3xl p-8 border border-border text-center shadow-sm">
+          <div class="w-14 h-14 bg-secondary rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="globe" class="text-accent w-7 h-7"></i>
+          </div>
+          <h3 class="font-semibold mb-2">国際環境で学んだ英語感覚</h3>
+          <p class="text-muted text-sm">マレーシアのインターナショナルスクールで培った自然な英語感覚を活かします。</p>
+        </div>
+
+        <div class="bg-white rounded-3xl p-8 border border-border text-center shadow-sm">
+          <div class="w-14 h-14 bg-secondary rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="users" class="text-accent w-7 h-7"></i>
+          </div>
+          <h3 class="font-semibold mb-2">初心者・学生に寄り添う指導</h3>
+          <p class="text-muted text-sm">英語に自信がない方でも安心。日本語話者の不安を理解した丁寧なサポート。</p>
+        </div>
+
+        <div class="bg-white rounded-3xl p-8 border border-border text-center shadow-sm">
+          <div class="w-14 h-14 bg-secondary rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="laptop" class="text-accent w-7 h-7"></i>
+          </div>
+          <h3 class="font-semibold mb-2">オンラインで気軽に受講</h3>
+          <p class="text-muted text-sm">ZoomやGoogle Meetを使用。自宅から、自分のペースで学べます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRENGTH -->
+  <section id="about" class="py-24 px-6 md:px-12 max-w-7xl mx-auto reveal">
+    <div class="text-center mb-16">
+      <p class="text-accent font-semibold text-sm mb-2">Value & Strength</p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">ZUBAの強み</h2>
+      <p class="text-muted">英語を「勉強」だけで終わらせず、実際に話せる力へつなげます。</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="md:col-span-2 bg-white rounded-3xl p-8 border border-border shadow-sm">
+        <div class="w-12 h-12 bg-secondary rounded-2xl flex items-center justify-center mb-6">
+          <i data-lucide="globe-2" class="text-accent"></i>
+        </div>
+        <h3 class="text-2xl font-display font-semibold mb-4">インターナショナルスクールで培った英語感覚</h3>
+        <p class="text-muted leading-relaxed">
+          中学1年生の頃からマレーシアのインターナショナルスクールで学び、英語を日常的に使ってきました。教科書だけでは学びにくい自然な表現や発音の感覚も、わかりやすくお伝えします。
+        </p>
+      </div>
+
+      <div class="bg-primary text-white rounded-3xl p-8 shadow-sm">
+        <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mb-6">
+          <i data-lucide="mic"></i>
+        </div>
+        <h3 class="text-xl font-display font-semibold mb-4">マンツーマンでたくさん話せる</h3>
+        <p class="text-slate-300 leading-relaxed text-sm">
+          レッスン時間の多くを「話す練習」に使います。やさしく具体的なフィードバックで、少しずつ自信を育てます。
+        </p>
+      </div>
+
+      <div class="bg-white rounded-3xl p-8 border border-border text-center shadow-sm">
+        <h3 class="text-4xl font-display font-bold text-accent mb-2">Malaysia</h3>
+        <p class="font-medium mb-1">International School</p>
+        <p class="text-muted text-sm">国際環境で英語を使って学んだ経験。</p>
+      </div>
+
+      <div class="bg-white rounded-3xl p-8 border border-border text-center shadow-sm">
+        <h3 class="text-4xl font-display font-bold text-accent mb-2">2年+</h3>
+        <p class="font-medium mb-1">Online Teaching</p>
+        <p class="text-muted text-sm">オンライン英会話講師としての経験。</p>
+      </div>
+
+      <div class="bg-accent text-white rounded-3xl p-8 shadow-sm">
+        <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mb-5">
+          <i data-lucide="star"></i>
+        </div>
+        <h3 class="text-xl font-display font-semibold mb-3">1対1で安心して学べる</h3>
+        <p class="text-white/85 text-sm leading-relaxed">
+          人前で話すのが苦手な方でも大丈夫。あなたの目標に合わせて、無理なく進めます。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COACH -->
+  <section id="about-coach" class="py-24 bg-white reveal">
+    <div class="max-w-5xl mx-auto px-6 md:px-12">
+      <div class="text-center mb-16">
+        <p class="text-accent font-semibold text-sm mb-2">Coach Profile</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">講師紹介</h2>
+        <p class="text-muted">担当講師のプロフィール</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="relative">
+          <div class="aspect-square bg-slate-200 rounded-3xl overflow-hidden shadow-xl max-w-sm mx-auto">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=700&q=80" alt="英会話コーチのプロフィール用イメージ写真" class="w-full h-full object-cover">
+          </div>
+          <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white border border-border rounded-2xl px-6 py-3 shadow-lg flex items-center gap-3 whitespace-nowrap">
+            <div class="w-3 h-3 rounded-full bg-accent animate-pulse"></div>
+            <span class="text-sm font-medium text-primary">レッスン受付中</span>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <div>
+            <h3 class="font-display text-3xl font-bold mb-1">Abe Aizuba</h3>
+            <p class="text-accent font-medium">English Conversation Coach</p>
+          </div>
+
+          <p class="text-muted leading-relaxed">
+            Abe Aizubaは、中学1年生の頃からマレーシアのインターナショナルスクールで学び、現地の高校課程を修了しました。日本の大学進学に必要な12年の学歴要件を満たすため、現在は日本の高校3年生として在籍しています。英語環境で学んできた経験と、約2年のオンライン英会話講師経験を活かし、初心者や学生にもわかりやすく、話しやすいレッスンを提供します。
+          </p>
+
+          <div class="flex flex-wrap gap-3">
+            <span class="px-4 py-2 bg-secondary border border
+  <!-- PRICING -->
+  <section id="pricing" class="py-24 bg-secondary reveal">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="text-center mb-12">
+        <p class="text-accent font-semibold text-sm mb-2">Courses & Pricing</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">コース・料金</h2>
+        <p class="text-muted">無料カウンセリング後に、目的に合ったプランをご提案します。</p>
+      </div>
+
+      <div class="flex justify-center mb-12">
+        <div class="bg-white p-1 rounded-xl inline-flex shadow-sm border border-border">
+          <button id="btn-monthly" class="px-6 py-2 rounded-lg text-sm font-medium bg-primary text-white shadow-sm" onclick="switchPricing('monthly')">月謝制</button>
+          <button id="btn-ticket" class="px-6 py-2 rounded-lg text-sm font-medium text-muted hover:text-primary" onclick="switchPricing('ticket')">回数券</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 xl:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="rounded-3xl p-8 border border-border bg-white shadow-sm flex flex-col">
+          <div class="text-xs font-medium text-accent mb-4">初心者おすすめ</div>
+          <h3 class="font-display text-xl font-semibold mb-2">First Step English</h3>
+          <p class="text-muted text-sm mb-6">英会話を基礎から始めたい方向け</p>
+          <div class="mb-6">
+            <span class="text-4xl font-bold font-display price-monthly">¥12,000</span>
+            <span class="text-4xl font-bold font-display price-ticket hidden">¥14,000</span>
+            <span class="text-muted text-sm price-monthly-label">/月</span>
+            <span class="text-muted text-sm price-ticket-label hidden">/4回分</span>
+          </div>
+          <ul class="space-y-4 mb-8 flex-1 text-sm text-slate-700">
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-accent shrink-0"></i> 月4回・1回40分</li>
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-accent shrink-0"></i> 基礎文法・発音の丁寧な解説</li>
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-accent shrink-0"></i> 日常英会話の基本フレーズ</li>
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-accent shrink-0"></i> レッスン後のフィードバック</li>
+          </ul>
+          <a href="#contact" class="block text-center w-full py-3 rounded-xl border border-border text-primary font-medium hover:bg-soft">相談する</a>
+        </div>
+
+        <div class="rounded-3xl p-8 border-2 border-accent bg-white relative shadow-lg flex flex-col xl:-translate-y-4">
+          <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-accent text-white px-4 py-1 rounded-full text-xs font-semibold">
+            人気プラン
+          </div>
+          <div class="text-xs font-medium text-accent mb-4">日常英会話</div>
+          <h3 class="font-display text-xl font-semibold mb-2">Daily Conversation</h3>
+          <p class="text-muted text-sm mb-6">自然な会話力を伸ばしたい方向け</p>
+          <div class="mb-6">
+            <span class="text-4xl font-bold font-display price-monthly">¥20,000</span>
+            <span class="text-4xl font-bold font-display price-ticket hidden">¥24,000</span>
+            <span class="text-muted text-sm price-monthly-label">/月</span>
+            <span class="text-muted text-sm price-ticket-label hidden">/4回分</span>
+          </div>
+          <ul class="space-y-4 mb-8 flex-1 text-sm text-slate-700">
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-accent shrink-0"></i> 月4回・1回50分</li>
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-accent shrink-0"></i> 日常会話・自己紹介・旅行英会話</li>
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-accent shrink-0"></i> ロールプレイ形式の練習</li>
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-accent shrink-0"></i> 発音・表現のフィードバック</li>
+          </ul>
+          <a href="#contact" class="block text-center w-full py-3 rounded-xl bg-accent text-white font-medium hover:bg-accent/90">申し込む</a>
+        </div>
+
+        <div class="rounded-3xl p-8 border border-border bg-white shadow-sm flex flex-col">
+          <div class="text-xs font-medium text-accent mb-4">カスタマイズ</div>
+          <h3 class="font-display text-xl font-semibold mb-2">Custom Private Lesson</h3>
+          <p class="text-muted text-sm mb-6">目的に合わせて内容を調整したい方向け</p>
+          <div class="mb-6">
+            <span class="text-4xl font-bold font-display price-monthly">¥28,000</span>
+            <span class="text-4xl font-bold font-display price-ticket hidden">¥34,000</span>
+            <span class="text-muted text-sm price-monthly-label">/月</span>
+            <span class="text-muted text-sm price-ticket-label hidden">/4回分</span>
+          </div>
+          <ul class="space-y-4 mb-8 flex-1 text-sm text-slate-700">
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-accent shrink-0"></i> 月4回・1回60分</li>
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-accent shrink-0"></i> 留学・海外生活準備</li>
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-accent shrink-0"></i> 学校英語のサポート</li>
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-accent shrink-0"></i> テーマ・ペースを柔軟に調整</li>
+          </ul>
+          <a href="#contact" class="block text-center w-full py-3 rounded-xl border border-border text-primary font-medium hover:bg-soft">相談する</a>
+        </div>
+      </div>
+
+      <p class="text-center text-muted text-sm mt-10">
+        ※ 料金は税込・参考価格です。正式な内容はカウンセリング時にご確認ください。<br>
+        ※ 無料カウンセリング後に入会を決める必要はありません。
+      </p>
+    </div>
+  </section>
+
+  <!-- FLOW -->
+  <section id="flow" class="py-24 px-6 md:px-12 max-w-6xl mx-auto reveal">
+    <div class="text-center mb-16">
+      <p class="text-accent font-semibold text-sm mb-2">Lesson Flow</p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">受講の流れ</h2>
+      <p class="text-muted">お申し込みからレッスン開始まで、わかりやすく進めます。</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-5">
+      <div class="bg-white border border-border rounded-3xl p-6 text-center shadow-sm">
+        <div class="w-14 h-14 mx-auto rounded-2xl bg-accent text-white flex items-center justify-center mb-4"><i data-lucide="calendar-check"></i></div>
+        <p class="text-xs font-bold text-accent mb-2">STEP 01</p>
+        <h3 class="font-semibold mb-2">無料相談予約</h3>
+        <p class="text-xs text-muted leading-relaxed">フォームから希望内容をお知らせください。</p>
+      </div>
+
+      <div class="bg-white border border-border rounded-3xl p-6 text-center shadow-sm">
+        <div class="w-14 h-14 mx-auto rounded-2xl bg-soft text-accent flex items-center justify-center mb-4"><i data-lucide="messages-square"></i></div>
+        <p class="text-xs font-bold text-accent mb-2">STEP 02</p>
+        <h3 class="font-semibold mb-2">ヒアリング</h3>
+        <p class="text-xs text-muted leading-relaxed">英語レベル・目標・不安をお聞きします。</p>
+      </div>
+
+      <div class="bg-white border border-border rounded-3xl p-6 text-center shadow-sm">
+        <div class="w-14 h-14 mx-auto rounded-2xl bg-soft text-accent flex items-center justify-center mb-4"><i data-lucide="clipboard-list"></i></div>
+        <p class="text-xs font-bold text-accent mb-2">STEP 03</p>
+        <h3 class="font-semibold mb-2">プラン提案</h3>
+        <p class="text-xs text-muted leading-relaxed">目的に合う内容をご提案します。</p>
+      </div>
+
+      <div class="bg-white border border-border rounded-3xl p-6 text-center shadow-sm">
+        <div class="w-14 h-14 mx-auto rounded-2xl bg-soft text-accent flex items-center justify-center mb-4"><i data-lucide="calendar"></i></div>
+        <p class="text-xs font-bold text-accent mb-2">STEP 04</p>
+        <h3 class="font-semibold mb-2">日時決定</h3>
+        <p class="text-xs text-muted leading-relaxed">無理のない受講日時を決めます。</p>
+      </div>
+
+      <div class="bg-white border border-border rounded-3xl p-6 text-center shadow-sm">
+        <div class="w-14 h-14 mx-auto rounded-2xl bg-primary text-white flex items-center justify-center mb-4"><i data-lucide="graduation-cap"></i></div>
+        <p class="text-xs font-bold text-primary mb-2">STEP 05</p>
+        <h3 class="font-semibold mb-2">レッスン開始</h3>
+        <p class="text-xs text-muted leading-relaxed">一緒に英語力を育てていきます。</p>
+      </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="#contact" class="inline-flex items-center gap-2 px-8 py-4 bg-accent text-white rounded-2xl font-medium hover:shadow-xl">
+        無料カウンセリングを予約する
+        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- SCHEDULER -->
+  <section id="scheduler" class="py-24 px-6 md:px-12 max-w-7xl mx-auto reveal">
+    <div class="grid grid-cols-1 xl:grid-cols-2 gap-14 items-center">
+      <div>
+        <p class="text-accent font-semibold text-sm mb-2">Free Counseling</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold mb-6">空き状況を確認する</h2>
+        <p class="text-muted leading-relaxed mb-8">
+          無料カウンセリングはオンラインで行います。英語が苦手な方も大歓迎です。日本語で相談できますので、現在の英語レベルや目標、不安を気軽にお話しください。
+        </p>
+
+        <div class="space-y-4">
+          <div class="flex items-center gap-4 p-4 rounded-2xl border border-border bg-white shadow-sm">
+            <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center"><i data-lucide="video" class="w-5 h-5 text-primary"></i></div>
+            <div>
+              <p class="font-medium">オンライン実施</p>
+              <p class="text-sm text-muted">Zoom / Google Meetを使用します</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 p-4 rounded-2xl border border-border bg-white shadow-sm">
+            <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center"><i data-lucide="clock" class="w-5 h-5 text-primary"></i></div>
+            <div>
+              <p class="font-medium">約45分</p>
+              <p class="text-sm text-muted">ヒアリングと簡単な体験相談</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 p-4 rounded-2xl border border-border bg-white shadow-sm">
+            <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center"><i data-lucide="smile" class="w-5 h-5 text-primary"></i></div>
+            <div>
+              <p class="font-medium">無理な勧誘はありません</p>
+              <p class="text-sm text-muted">相談だけでも大丈夫です</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl border border-border p-8 shadow-md">
+        <div class="flex items-center justify-between mb-8">
+          <h3 class="font-display font-semibold text-xl">2026年 5月</h3>
+          <div class="flex gap-2">
+            <button class="p-2 border border-border hover:bg-secondary rounded-lg" aria-label="前の月"><i data-lucide="chevron-left" class="w-4 h-4"></i></button>
+            <button class="p-2 border border-border hover:bg-secondary rounded-lg" aria-label="次の月"><i data-lucide="chevron-right" class="w-4 h-4"></i></button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-7 gap-2 text-center text-sm mb-4">
+          <div class="text-muted text-xs">Sun</div><div class="text-muted text-xs">Mon</div><div class="text-muted text-xs">Tue</div><div class="text-muted text-xs">Wed</div><div class="text-muted text-xs">Thu</div><div class="text-muted text-xs">Fri</div><div class="text-muted text-xs">Sat</div>
+        </div>
+
+        <div class="grid grid-cols-7 gap-2 text-center text-sm">
+          <div class="py-3 text-muted opacity-30">26</div><div class="py-3 text-muted opacity-30">27</div><div class="py-3 text-muted opacity-30">28</div><div class="py-3 text-muted opacity-30">29</div><div class="py-3 text-muted opacity-30">30</div><div class="py-3 text-muted opacity-30">1</div><div class="py-3 text-muted opacity-30">2</div>
+          <div class="py-2 rounded-xl hover:bg-secondary">3<br><span class="text-xs text-accent">◯</span></div>
+          <div class="py-2 rounded-xl hover:bg-secondary">4<br><span class="text-xs text-muted">✕</span></div>
+          <div class="py-2 rounded-xl bg-accent/5 text-accent font-semibold border-2 border-accent shadow-sm">5<br><span class="text-xs">◯</span></div>
+          <div class="py-2 rounded-xl hover:bg-secondary">6<br><span class="text-xs text-accent">△</span></div>
+          <div class="py-2 rounded-xl hover:bg-secondary">7<br><span class="text-xs text-accent">◯</span></div>
+          <div class="py-2 rounded-xl hover:bg-secondary">8<br><span class="text-xs text-muted">✕</span></div>
+          <div class="py-2 rounded-xl hover:bg-secondary">9<br><span class="text-xs text-accent">◯</span></div>
+        </div>
+
+        <div class="mt-8 pt-6 border-t border-border">
+          <p class="text-sm font-medium mb-4">5月5日（火）の空き枠</p>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="selectTimeSlot('10:00')" class="px-5 py-2.5 border border-accent text-accent rounded-xl text-sm font-medium hover:bg-accent hover:text-white">10:00</button>
+            <button onclick="selectTimeSlot('14:00')" class="px-5 py-2.5 border border-accent text-accent rounded-xl text-sm font-medium hover:bg-accent hover:text-white">14:00</button>
+            <button disabled class="px-5 py-2.5 border border-border text-muted rounded-xl text-sm font-medium line-through cursor-not-allowed bg-slate-50">16:00</button>
+            <button onclick="selectTimeSlot('19:00')" class="px-5 py-2.5 border border-accent text-accent rounded-xl text-sm font-medium hover:bg-accent hover:text-white">19:00</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-24 bg-white reveal">
+    <div class="max-w-3xl mx-auto px-6 md:px-12">
+      <div class="text-center mb-12">
+        <p class="text-accent font-semibold text-sm mb-2">FAQ</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">よくある質問</h2>
+      </div>
+
+      <div class="space-y-4">
+        <details class="group bg-secondary rounded-2xl border border-border overflow-hidden shadow-sm">
+          <summary class="flex items-center justify-between p-6 font-medium cursor-pointer">
+            英会話がほとんど初めてでも大丈夫ですか？
+            <span class="group-open:-rotate-180 transition-transform"><i data-lucide="chevron-down" class="w-5 h-5"></i></span>
+          </summary>
+          <div class="p-6 pt-0 text-muted leading-relaxed">はい、大丈夫です。初心者の方にもわかりやすいように、日本語も使いながらゆっくり進めます。</div>
+        </details>
+
+        <details class="group bg-secondary rounded-2xl border border-border overflow-hidden shadow-sm">
+          <summary class="flex items-center justify-between p-6 font-medium cursor-pointer">
+            保護者から問い合わせてもよいですか？
+            <span class="group-open:-rotate-180 transition-transform"><i data-lucide="chevron-down" class="w-5 h-5"></i></span>
+          </summary>
+          <div class="p-6 pt-0 text-muted leading-relaxed">はい、保護者の方からのお問い合わせも歓迎しています。お子さまの英語レベルや目的に合わせてご相談いただけます。</div>
+        </details>
+
+        <details class="group bg-secondary rounded-2xl border border-border overflow-hidden shadow-sm">
+          <summary class="flex items-center justify-between p-6 font-medium cursor-pointer">
+            レッスンはオンラインですか？
+            <span class="group-open:-rotate-180 transition-transform"><i data-lucide="chevron-down" class="w-5 h-5"></i></span>
+          </summary>
+          <div class="p-6 pt-0 text-muted leading-relaxed">はい、基本的にオンラインで実施します。ZoomやGoogle Meetなどを使用します。</div>
+        </details>
+
+        <details class="group bg-secondary rounded-2xl border border-border overflow-hidden shadow-sm">
+          <summary class="flex items-center justify-between p-6 font-medium cursor-pointer">
+            無料相談後に必ず入会する必要はありますか？
+            <span class="group-open:-rotate-180 transition-transform"><i data-lucide="chevron-down" class="w-5 h-5"></i></span>
+          </summary>
+          <div class="p-6 pt-0 text-muted leading-relaxed">いいえ、ありません。まずは内容を聞いてから、ゆっくりご検討ください。</div>
+        </details>
+
+        <details class="group bg-secondary rounded-2xl border border-border overflow-hidden shadow-sm">
+          <summary class="flex items-center justify-between p-6 font-medium cursor-pointer">
+            どんな内容を学べますか？
+            <span class="group-open:-rotate-180 transition-transform"><i data-lucide="chevron-down" class="w-5 h-5"></i></span>
+          </summary>
+          <div class="p-6 pt-0 text-muted leading-relaxed">日常英会話、基礎文法、発音、旅行英会話、留学・海外生活準備、学校英語のサポートなどに対応できます。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-24 bg-primary text-white relative overflow-hidden reveal">
+    <div class="max-w-3xl mx-auto px-6 md:px-12 relative z-10">
+      <div class="text-center mb-12">
+        <p class="text-accent font-semibold text-sm mb-2">Contact</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">無料カウンセリングのご予約</h2>
+        <p class="text-slate-300">まずは気軽にご相談ください。英語が苦手な方も大歓迎です。</p>
+        <p class="text-slate-400 text-sm mt-3">※ 現在このフォームはデモ用です。正式公開時に送信機能を接続してください。</p>
+      </div>
+
+      <form class="space-y-6" name="contact" method="POST" data-netlify="true" onsubmit="handleFormSubmit(event)">
+        <input type="hidden" name="form-name" value="contact">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-2">
+            <label class="text-sm font-medium text-slate-300">お名前 <span class="text-accent">*</span></label>
+            <input type="text" name="name" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 focus:outline-none focus:border-accent" placeholder="山田 太郎">
+          </div>
+
+          <div class="space-y-2">
+            <label class="text-sm font-medium text-slate-300">メールアドレス <span class="text-accent">*</span></label>
+            <input type="email" name="email" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 focus:outline-none focus:border-accent" placeholder="email@example.com">
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <label class="text-sm font-medium text-slate-300">現在の英語レベル</label>
+          <select name="level" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-accent">
+            <option value="" class="text-primary bg-white">選択してください</option>
+            <option value="beginner" class="text-primary bg-white">初級：英語に自信がない</option>
+            <option value="elementary" class="text-primary bg-white">初中級：簡単な会話ならできる</option>
+            <option value="intermediate" class="text-primary bg-white">中級：もっと自然に話せるようになりたい</option>
+            <option value="other" class="text-primary bg-white">その他：相談したい</option>
+          </select>
+        </div>
+
+        <div class="space-y-2">
+          <label class="text-sm font-medium text-slate-300">学びたい内容</label>
+          <select name="topic" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-accent">
+            <option value="" class="text-primary bg-white">選択してください</option>
+            <option value="daily" class="text-primary bg-white">日常英会話</option>
+            <option value="grammar" class="text-primary bg-white">基礎文法</option>
+            <option value="pronunciation" class="text-primary bg-white">発音</option>
+            <option value="travel" class="text-primary bg-white">旅行英会話</option>
+            <option value="study-abroad" class="text-primary bg-white">留学・海外生活準備</option>
+            <option value="school" class="text-primary bg-white">学校英語のサポート</option>
+            <option value="other" class="text-primary bg-white">その他</option>
+          </select>
+        </div>
+
+        <div class="space-y-2">
+          <label class="text-sm font-medium text-slate-300">希望メッセージ</label>
+          <textarea id="contact-message" name="message" rows="5" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 focus:outline-none focus:border-accent" placeholder="例：英会話が初めてなので、基礎からゆっくり学びたいです。"></textarea>
+        </div>
+
+        <button type="submit" class="w-full py-4 bg-accent text-white font-medium rounded-xl hover:bg-accent/90 flex items-center justify-center gap-2">
+          無料カウンセリングを申し込む
+          <i data-lucide="send" class="w-4 h-4"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-primary pt-12 pb-8 px-6 border-t border-white/10 text-slate-400">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="font-display text-xl text-white font-semibold">ZUBA English Studio</div>
+      <div class="flex flex-wrap justify-center gap-6 text-sm">
+        <a href="/privacy" class="hover:text-white">プライバシーポリシー</a>
+        <a href="/legal" class="hover:text-white">特定商取引法に基づく表記</a>
+        <a href="/terms" class="hover:text-white">利用規約</a>
+        <a href="/cancel-policy" class="hover:text-white">キャンセルポリシー</a>
+      </div>
+      <div class="text-sm text-center">&copy; 2026 ZUBA English Studio. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    window.switchPricing = function (type) {
+      const btnMonthly = document.getElementById('btn-monthly');
+      const btnTicket = document.getElementById('btn-ticket');
+      const monthlyPrices = document.querySelectorAll('.price-monthly');
+      const ticketPrices = document.querySelectorAll('.price-ticket');
+      const monthlyLabels = document.querySelectorAll('.price-monthly-label');
+      const ticketLabels = document.querySelectorAll('.price-ticket-label');
+
+      if (!btnMonthly || !btnTicket) return;
+
+      if (type === 'monthly') {
+        btnMonthly.className = 'px-6 py-2 rounded-lg text-sm font-medium bg-primary text-white shadow-sm';
+        btnTicket.className = 'px-6 py-2 rounded-lg text-sm font-medium text-muted hover:text-primary';
+        monthlyPrices.forEach(el => el.classList.remove('hidden'));
+        ticketPrices.forEach(el => el.classList.add('hidden'));
+        monthlyLabels.forEach(el => el.classList.remove('hidden'));
+        ticketLabels.forEach(el => el.classList.add('hidden'));
+      } else {
+        btnTicket.className = 'px-6 py-2 rounded-lg text-sm font-medium bg-primary text-white shadow-sm';
+        btnMonthly.className = 'px-6 py-2 rounded-lg text-sm font-medium text-muted hover:text-primary';
+        monthlyPrices.forEach(el => el.classList.add('hidden'));
+        ticketPrices.forEach(el => el.classList.remove('hidden'));
+        monthlyLabels.forEach(el => el.classList.add('hidden'));
+        ticketLabels.forEach(el => el.classList.remove('hidden'));
+      }
+    };
+
+    window.selectTimeSlot = function (time) {
+      const textarea = document.getElementById('contact-message');
+      const contactSection = document.getElementById('contact');
+
+      if (textarea) {
+        textarea.value = '5月5日（火）' + time + ' の無料カウンセリングを希望します。';
+      }
+
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      setTimeout(() => {
+        if (textarea) textarea.focus();
+      }, 800);
+    };
+
+    window.handleFormSubmit = function (event) {
+      event.preventDefault();
+      alert('ありがとうございます。現在このフォームはデモ用です。本番公開時に送信機能を接続してください。');
+    };
+
+    document.addEventListener('DOMContentLoaded', function () {
+      try {
+        if (window.lucide) {
+          lucide.createIcons();
+        }
+
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        if (mobileBtn && mobileMenu) {
+          mobileBtn.addEventListener('click', function () {
+            mobileMenu.classList.toggle('hidden');
+          });
+        }
+
+        mobileLinks.forEach(function (link) {
+          link.addEventListener('click', function () {
+            if (mobileMenu) mobileMenu.classList.add('hidden');
+          });
+        });
+
+        const revealElements = document.querySelectorAll('.reveal');
+
+        if ('IntersectionObserver' in window) {
+          const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+              }
+            });
+          }, { threshold: 0.1 });
+
+          revealElements.forEach(function (el) {
+            observer.observe(el);
+          });
+        } else {
+          revealElements.forEach(function (el) {
+            el.classList.add('active');
+          });
+        }
+      } catch (error) {
+        console.error('Initialization error:', error);
+        document.querySelectorAll('.reveal').forEach(function (el) {
+          el.classList.add('active');
+        });
+      }
+    });
+  </script>
+</body>
+</html>
